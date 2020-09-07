@@ -86,7 +86,90 @@ function displayMenu() {
     })
 }
 
+function addintern(){
+    inquirer
+    .prompt([
+        {
+            type: "input",
+            message: "What is your name?",
+            name: "Name"
+            // console.log(response.Name)
 
+        },
+        {
+            type: "input",
+            message: "What is your ID?",
+            name: "ID"
+            // console.log(response.ID)
+
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "Email"
+            // console.log(response.Email)
+
+    
+        },
+        {
+            type: "input",
+            message: "What school did you graduate from?",
+            name: "School"
+            // console.log(response.School)
+
+        }
+    ])
+
+.then(function (response) {
+    var newIntern = new Intern(response.Name, response.ID,response.Email,response.School)
+    employeeDirectory.push(newIntern)
+    displayMenu()
+})
+}
+function addengineer(){
+    inquirer
+    .prompt([
+        {
+            type: "input",
+            message: "What is your name?",
+            name: "Name"
+            // console.log(response.Name)
+
+        },
+        {
+            type: "input",
+            message: "What is your ID?",
+            name: "ID"
+            // console.log(response.ID)
+
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "Email"
+            // console.log(response.Email)
+
+    
+        },
+        {
+            type: "input",
+            message: "What is your official Github?",
+            name: "GitHub"
+            // console.log(response.GitHub)
+
+        }
+    ])
+
+
+.then(function (response) {
+    var newEngineer = new Engineer(response.Name, response.ID,response.Email,response.GitHub)
+    employeeDirectory.push(newEngineer)
+    displayMenu()
+})
+}
+function exitapp(){
+    console.log(employeeDirectory);
+}
 displayMenu()
 //         console.log(response);
 //         var READMEdata = `

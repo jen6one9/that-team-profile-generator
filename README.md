@@ -3,7 +3,13 @@ Quickly generate a web page that displays a team's basic info for quick access t
 
 
 ## Description
-This project seeks to create a command line application that allows user input using the inquirer package to dynamically generate a web page that displays a team's basic info for quick access to their emails and GitHub profiles.
+This project seeks to create a command line application that allows user input to dynamically generate a web page that displays pertinent team info in an org chart like format.
+
+## User Story
+As a manager
+I want to generate a webpage that displays my team's basic info
+so that I have quick access to emails and GitHub profiles
+
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -40,10 +46,8 @@ This app is intended for free use.
 
 
 ##  Acknowledgements 
-Unsplash.com
-Materialize
+Photos by photographer-name
+
 
  
 
-## Developer Profile
-https://github.com/jen6one9

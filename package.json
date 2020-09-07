@@ -4,7 +4,7 @@
   "description": "Quickly generate a web page that displays a team's basic info for quick access to their emails and GitHub profiles.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose Tests/*"
   },
   "repository": {
     "type": "git",

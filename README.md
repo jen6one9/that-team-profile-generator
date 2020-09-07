@@ -25,10 +25,10 @@ Step 3. Run node index.js on your command line
 Step 4. Complete all prompts 
 
 
-Step 5. Navigate to your README.md and preview your file by right clicking on the README.md and selecting Open Preview. 
+Step 5. Navigate to your web browser and view your dynamically generated page
 
 # Demo
-Play this demo to see how the app functions [Click here](https://drive.google.com/file/d/1_xUb0MZ_cAgjMrP5Y49RvdLIMPCJ-cpW/view?usp=sharing).
+Play this demo to see how the app functions [Click here](https://drive.google.com/filxxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 
 
@@ -39,14 +39,11 @@ This app is intended for free use.
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
-##  Contributions
-Contributions are welcome - just make sure to send me a note. 
+##  Acknowledgements 
+Unsplash.com
+Materialize
 
-##  Tests
-There are no automated scripts at this time. Users can use console.log to incrementally test the code. 
-
-##  Questions
-Please reach out to me with any questions via diesta.jeneth@gmail.com
+ 
 
 ## Developer Profile
 https://github.com/jen6one9

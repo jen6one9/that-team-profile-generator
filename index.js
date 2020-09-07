@@ -169,6 +169,11 @@ function addengineer(){
 }
 function exitapp(){
     console.log(employeeDirectory);
+    var html = render(employeeDirectory);
+    console.log(html);
+    fs.writeFileSync ("./index.html", html, function(){
+        console.log("html generator")
+    })
 }
 displayMenu()
 //         console.log(response);

@@ -1,52 +1,13 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Single Sign On (SSO) Team</a>
-        </div>
-    </nav>
-
-    <div class="container">
-        <h6>Employee Quick Reference Guide</h6>
-        <div class="row">
-            <div class="col l4">
-                    <div class="card-panel hoverable"> ${name}
-                        <img src="./assets/developer 1.jpg" class="responsive-img" height="150" width="300"
-                            class="img-fluid" alt="Responsive image">
-                </a>
-                <p> <a href="${email}" target="_blank">${email}</a></p>
-                <p>${title} </p>
-                <p>${github} </p>
-                <p>${employee id} </p>
-                <p>${university} </p>
-            </div>
-
-
-
-            <footer class="page-footer">
-                <div class="pgfooter">
-                    © 2020 Copyright Jeneth Diesta
-                </div>
-                </div>
-            </footer>
-
-<script type="text/javascript" src="js/materialize.min.js"></script>
- 
-</body>
-
-</html>
+<div class="card employee-card">
+    <div class="card-header">
+        <h2 class="card-title">{{ name }}</h2>
+        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>{{ role }}</h3>
+    </div>
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">ID: {{ id }}</li>
+            <li class="list-group-item">Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+            <li class="list-group-item">Office number: {{ officeNumber }}</li>
+        </ul>
+    </div>
+</div>

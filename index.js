@@ -53,16 +53,11 @@ inquirer
 
     ])
 
-    .then(function (response) {
-        console.log(response);
-        var READMEdata = `
-# ${response.Title}
+//     .then(function (response) {
+//         console.log(response);
+//         var READMEdata = `
+// # ${response.Title}
 
 
-    .catch(function (error) {
-        console.log('error', error);
-
- 
-    });
-
-
+//     .catch(function (error) {
+//         console.log('error', error)

@@ -8,63 +8,86 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./lib/htmlRenderer");
-
+const render = require("./lib/htmlRender");
+var employeeDirectory = []
 
 // const util = require('util');
 
 // Prompt the user with questions
-inquirer
-    .prompt([
+
+
+      
+function displayMenu() {
+    inquirer.prompt([
         {
-            type: "input",
-            message: "What is your first/last name?",
-            name: "Name"
-            // console.log(response.Name)
+            type: "list",
+            message: "what would you like to do?",
+            name: "userInput",
+            choices: ["manager", "intern", "engineer", "exit application"]
 
-        },
-        {
-            type: "input",
-            message: "What is your role within the team?",
-            name: "Title"
-            // console.log(response.Title)
-
-        },
-        {
-            type: "input",
-            message: "What is your email address?",
-            name: "Email"
-            // console.log(response.Email)
-
-
-
-        },
-        {
-            type: "input",
-            message: "What is your GitHub profile?",
-            name: "GitHub"
-            // console.log(response.GitHub)
-
-        },
-
-        {
-            type: "input",
-            message: "Please provide your employee ID.",
-            name: "EmployeeNumber"
-            // console.log(response.EmployeeNumber)
-
-        },
-        {
-            type: "input",
-            message: "What school did you graduate from?",
-            name: "Uni"
-            // console.log(response.Uni)
-
-        },
-
+        }
     ])
+        .then(function (response) {
+            switch (response.userInput) {
+                case "manager":
+                    addmanager()
+                    break;
+                case "intern":
+                    addintern()
+                    break;
+                case "engineer":
+                    addengineer()
+                    break;
+                default:
+                    exitapp()
+            }
+        }    )
+    }
 
-//     .then(function (response) {
+
+    function addmanager(){
+        inquirer
+        .prompt([
+            {
+                type: "input",
+                message: "What is your name?",
+                name: "Name"
+                // console.log(response.Name)
+    
+            },
+            {
+                type: "input",
+                message: "What is your ID?",
+                name: "ID"
+                // console.log(response.ID)
+    
+            },
+            {
+                type: "input",
+                message: "What is your email address?",
+                name: "Email"
+                // console.log(response.Email)
+    
+        
+            },
+            {
+                type: "input",
+                message: "What is your office number?",
+                name: "OfficeNumber"
+                // console.log(response.officeNumber)
+    
+            }
+        ])
+
+    .then(function (response) {
+        var newManager = new Manager(response.Name, response.ID,response.Email,response.OfficeNumber)
+        employeeDirectory.push(newManager)
+        displayMenu()
+    })
+}
+
+
+displayMenu()
 //         console.log(response);
 //         var READMEdata = `
 // # ${response.Title}

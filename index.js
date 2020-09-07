@@ -7,6 +7,13 @@ inquirer
     .prompt([
         {
             type: "input",
+            message: "What is your first/last name?",
+            name: "Name"
+            // console.log(response.Name)
+
+        },
+        {
+            type: "input",
             message: "What is your role within the team?",
             name: "Title"
             // console.log(response.Title)
@@ -51,42 +58,7 @@ inquirer
         var READMEdata = `
 # ${response.Title}
 
-## Developer Profile
-https://github.com/${response.GitHubUser}
 
-## Description
-
-${response.Description}
-## Table of Contents
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [License](#license)
-4. [Contributions](#contributions)
-5. [Tests](#tests)
-
-## Installation
-${response.Installation}
-
-##  Usage
-${response.Usage}
-
-##  License
-![GitHub license](https://img.shields.io/badge/license-${response.License}-blue.svg)
-
-
-##  Contributions
-${response.Contributions}
-
-##  Tests
-${response.Tests}
-
-##  Questions
-Please reach out to me with any questions via ${response.Email}`
-        console.log(READMEdata);
-        fs.writeFileSync("./README.md", READMEdata, function () {
-            console.log("READMEgenerated");
-        })
-    })
     .catch(function (error) {
         console.log('error', error);
 

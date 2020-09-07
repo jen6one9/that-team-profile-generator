@@ -1,4 +1,12 @@
-.nav {
-  background-color: #00796b !important;
+.nav-wrapper {
+  background-color: #90caf9 !important;
+}
+
+.card-panel {
+  widows: 350px;px;
+ }
+
+ .page-footer {
+  background-color: #90caf9 !important;
 }
  

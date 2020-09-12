@@ -21,7 +21,7 @@ function displayMenu() {
     inquirer.prompt([
         {
             type: "list",
-            message: "what would you like to do?",
+            message: "What role are you populating today?",
             name: "userInput",
             choices: ["manager", "intern", "engineer", "exit application"]
 

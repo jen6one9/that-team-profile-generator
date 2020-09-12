@@ -34,7 +34,10 @@ Step 4. Complete all prompts
 Step 5. Navigate to your web browser and view your dynamically generated page
 
 # Demo
-Play this demo to see how the app functions [Click here](https://drive.google.com/file/d/17eDCZuQH-rQOgJWFjMSZSgL77Oqt3F8m/view).
+Play this demo to see how the app functions [Click here] https://drive.google.com/file/d/1IaRu9P5qrrSIn7GfKD1tXSLdlUacYnr2/view
+
+#![alt-text](SSO Team.GIF)
+
 
 # Tests
 https://drive.google.com/file/d/17eDCZuQH-rQOgJWFjMSZSgL77Oqt3F8m/view

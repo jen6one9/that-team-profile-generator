@@ -34,12 +34,12 @@ Step 4. Complete all prompts
 Step 5. Navigate to your web browser and view your dynamically generated page
 
 # Demo
-Play this demo to see how the app functions ![Click Here](https://drive.google.com/file/d/1IaRu9P5qrrSIn7GfKD1tXSLdlUacYnr2/view)
+Play this demo to see how the app functions [Click Here](https://drive.google.com/file/d/1IaRu9P5qrrSIn7GfKD1tXSLdlUacYnr2/view)
 
  
 
 # Tests
-![Click Here](https://drive.google.com/file/d/17eDCZuQH-rQOgJWFjMSZSgL77Oqt3F8m/view)
+[Click Here](https://drive.google.com/file/d/17eDCZuQH-rQOgJWFjMSZSgL77Oqt3F8m/view)
 
 ##  Usage
 This app is intended for free use.

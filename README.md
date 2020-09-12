@@ -34,7 +34,7 @@ Step 4. Complete all prompts
 Step 5. Navigate to your web browser and view your dynamically generated page
 
 # Demo
-Play this demo to see how the app functions [Click here] https://drive.google.com/file/d/1IaRu9P5qrrSIn7GfKD1tXSLdlUacYnr2/view
+Play this demo to see how the app functions [Click]https://drive.google.com/file/d/1IaRu9P5qrrSIn7GfKD1tXSLdlUacYnr2/view
 
 #![alt-text](SSO Team.GIF)
 
@@ -50,8 +50,7 @@ This app is intended for free use.
 
 
 ##  Acknowledgements 
-Photos by photographer-name
-
+I would like to acknowledge and thank my tutor and cohort TA's for their support on this assignment! 
 
  
 
